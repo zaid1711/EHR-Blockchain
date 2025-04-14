@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>Blockchain EHR</title>
+    <script src="app.js"></script>
+ </head>
+ <body>
+    <h1>Blockchain-Based EHR</h1>
+    <p>Connected Account: <span id="account"></span></p>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadRecord()">Upload Record</button>
+    <ul id="recordsList"></ul>
+ </body>
+ </html>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain EHR</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+ </head>
+ <body>
+    <h1>Blockchain-Based EHR</h1>
+    <p>Connected Account: <span id="account"></span></p>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadRecord()">Upload Record</button>
+    <ul id="recordsList"></ul>
+ </body>
+ </html>
+
+
+ <!-- Add Doctor -->
+ <input type="text" id="doctorAddress" placeholder="Enter doctor address" />
+ <button onclick="addDoctor()">Add Doctor</button>
+
+ <!-- View Patient Records (Doctor only) -->
+<input type="text" id="patientAddress" placeholder="Enter patient address" />
+<button onclick="fetchPatientRecords()">View Patient Records</button>
