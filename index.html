@@ -8,19 +8,71 @@
     <script src="app.js"></script>
  </head>
  <body>
-    <h1>Blockchain-Based EHR</h1>
-    <p>Connected Account: <span id="account"></span></p>
-    <input type="file" id="fileInput" />
-    <button onclick="uploadRecord()">Upload Record</button>
-    <ul id="recordsList"></ul>
- </body>
- </html>
+   <header>
+    <nav class="container">
+      <h1>Blockchain EHR</h1>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#upload">Upload</a></li>
+        <li><a href="#records">Records</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
- <!-- Add Doctor -->
- <input type="text" id="doctorAddress" placeholder="Enter doctor address" />
- <button onclick="addDoctor()">Add Doctor</button>
 
- <!-- View Patient Records (Doctor only) -->
-<input type="text" id="patientAddress" placeholder="Enter patient address" />
-<button onclick="fetchPatientRecords()">View Patient Records</button>
+<section class="hero">
+    <div class="container">
+      <h2>Secure. Private. Decentralized.</h2>
+      <p>Your medical records stored safely on the blockchain. Only you decide who sees them.</p>
+      <a href="#upload" class="cta-button">Get Started</a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <div class="container">
+      <h3>Why Use Our EHR?</h3>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h4>Decentralized Storage</h4>
+          <p>No central server. Your files live on IPFS—safe from hacks.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Only You Control Access</h4>
+          <p>Doctors need your permission to access any of your files.</p>
+        </div>
+        <div class="feature-card">
+          <h4>Blockchain Audit Trail</h4>
+          <p>Every access is recorded permanently on the blockchain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="upload-section" id="upload">
+    <div class="container">
+      <h3>Upload Medical Record</h3>
+      <form class="upload-form">
+        <input type="file" name="record" />
+        <button type="submit">Upload to Blockchain</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="records-section" id="records">
+    <div class="container">
+      <h3>Your Records</h3>
+      <ul class="record-list">
+        <li>No records found. (This will show your IPFS records)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2025 Blockchain EHR | Built for trust and security.</p>
+    </div>
+  </footer>
+</body>
+</html>
